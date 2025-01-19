@@ -8,6 +8,12 @@
 ### dagger hilt
 ### exp4j
 ### mpandroidchart
+## Sơ đồ lớp của pha phân tích
+![image](https://github.com/user-attachments/assets/1052b4d9-4d3e-46ee-a79b-5147986dbf4c)
+## Sơ đồ lớp của pha thiết kế
+![image](https://github.com/user-attachments/assets/22d525ae-661d-406f-b25c-1b7af8be4ad3)
+## Cơ sở dữ liệu 
+![image](https://github.com/user-attachments/assets/a5ad2d64-99cc-46b1-b37f-a7dab1e9e6a9)
 ## Giao diện :
 ![z6243245163613_27c5f47bfb7819607285b9b1aedbc7cd](https://github.com/user-attachments/assets/21bf98f2-1508-4e39-8e37-045eac3a89a8)
 ![z6243245168518_9ec409fee595c88fd81e3353f54cf1e6](https://github.com/user-attachments/assets/a921a8f9-dafb-46c1-81ff-4c142bac933e)
