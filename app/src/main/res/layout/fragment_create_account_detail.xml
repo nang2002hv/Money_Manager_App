@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_181dp"
+            android:layout_marginTop="@dimen/_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_add_acount" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:textSize="@dimen/_28sp"
+            android:fontFamily="@font/sfprodisplay_medium"
+            android:text="@string/add_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivThumbnail" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_16sp"
+            android:text="@string/choose_a_name_for_your_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_create_account_input"
+            android:padding="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle">
+            
+            <ImageView
+                android:id="@+id/ivThumbnailContent"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/ic_user"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/etAccountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:textSize="@dimen/_14sp"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:visibility="gone"
+                    android:background="@null"
+                    tools:visibility="visible"/>
+
+                <Spinner
+                    android:id="@+id/spinnerCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/amountWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/_0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvCurrency"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/_14sp"
+                        android:background="@null" />
+
+                    <TextView
+                        android:id="@+id/tvCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24dp"
+            android:background="@drawable/bg_button"
+            android:textAllCaps="false"
+            android:text="@string/next"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llContent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

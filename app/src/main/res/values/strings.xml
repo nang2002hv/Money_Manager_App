@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">Money_Manager_App</string>
+    <string name="done">Done</string>
+    <string name="select_your_language">Select your language</string>
+    <string name="english" translatable="false">English\n</string>
+    <string name="money_manager" translatable="false">MONEY MANAGER</string>
+    <string name="simplify_your_finances">Simplify Your Finances</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="search">Search</string>
+    <string name="all_category">All category</string>
+    <string name="all_wallet">Select category</string>
+    <string name="calculator">Enter amount</string>
+    <string name="structure">Structure</string>
+    <string name="filter_options">Filter options</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="wallet">Wallet</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description</string>
+    <string name="amount">Amount</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="custom_date">Custom date</string>
+    <string name="min_amount">Minimum amount</string>
+    <string name="max_amount">Maximum amount</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="uk_flag" translatable="false">UK Flag</string>
+    <string name="vietnam_flag" translatable="false">Vietnam Flag</string>
+    <string name="vietnamese" translatable="false">Vietnamese</string>
+    <string name="tieng_viet" translatable="false">(Tiếng Việt)</string>
+    <string name="hindi" translatable="false" >(हिंदी)</string>
+    <string name="hindi_en" translatable="false">Hindi</string>
+    <string name="india_flag" translatable="false">India Flag</string>
+    <string name="chinese" translatable="false">(中文)</string>
+    <string name="chinese_en" translatable="false">Chinese</string>
+    <string name="china_flag" translatable="false">China Flag</string>
+    <string name="english_bracet" translatable="false">(English)</string>
+    <string name="add_account">Add Account</string>
+    <string name="choose_a_name_for_your_account">Choose a name for your account.</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="next">Next</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="favorite_currency_prompt">What is your favourite currency?</string>
+    <string name="skip">SKIP</string>
+    <string name="initial_amount">Initial Amount</string>
+    <string name="cash_wallet_prompt">How much money do you have in your cash wallet?</string>
+    <string name="amount_hint" translatable="false">%1$s 0</string>
+    <string name="overspent">Overspent</string>
+    <string name="left">Left</string>
+    <string name="money_amount" translatable="false">%1$s %2$.2f</string>
+    <string name="hidden_balance" translatable="false">********</string>
+    <string name="transactions_format">%1$d transactions</string>
+    <string name="adjust_balance">ADJUST BALANCE</string>
+    <string name="make_payment">MAKE PAYMENT</string>
+    <string name="days_left">%1$s days left</string>
+    <string name="account_name">Account Name</string>
+    <string name="included_in_total">Included in total</string>
+    <string name="excluded_from_total">Excluded from total</string>
+    <string name="amount_number">%1$.2f</string>
+    <string name="positive_money_amount" translatable="false">+%1$s %2$.2f</string>
+    <string name="negative_money_amount" translatable="false">-%1$s %2$.2f</string>
+    <string name="goal_transaction_name">%1$s to %2$s</string>
+    <string name="balance">Balance</string>
+    <string name="add_expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="transfer">Transfer</string>
+    <string name="save">Save</string>
+    <string name="opening_balance">Opening balance</string>
+    <string name="ending_balance">Ending balance</string>
+    <string name="show_more">Show more</string>
+    <string name="overview">Overview</string>
+    <string name="memo">Memo</string>
+    <string name="from_wallet">From Wallet</string>
+    <string name="to_wallet">To Wallet</string>
+    <string name="fee">Fee</string>
+    <string name="currency_cny">CNY</string>
+    <string name="currency_cny_symbol" translatable="false">¥</string>
+    <string name="currency_inr">INR</string>
+    <string name="currency_inr_symbol" translatable="false">₹</string>
+    <string name="currency_vnd">VND</string>
+    <string name="currency_vnd_symbol" translatable="false">₫</string>
+    <string name="currency_usd">USD</string>
+    <string name="currency_usd_symbol" translatable="false">$</string>
+    <string name="vn_language_code" translatable="false">vi</string>
+    <string name="enter_your_pass_code">Enter your pass code</string>
+    <string name="incorrect_pass_code">Incorrect pass code</string>
+    <string name="passcode_does_not_match">Passcode does not match</string>
+    <string name="please_enter_6_digit_passcode">Please enter a 6-digit passcode</string>
+    <string name="passcode_saved">Passcode saved</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="statistic">Statistic</string>
+    <string name="detail_day">Detail</string>
+    <string name="select_category">Select Category</string>
+    <string name="total">Total</string>
+    <string name="transaction_list">Transaction List</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="expense_structure">Expense Structure</string>
+    <string name="statistic_empty">No Record</string>
+    <string name="this_month">This Month</string>
+    <string name="weekly_spending">Weekly spending</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="this_week">This Week</string>
+    <string name="transaction">Transaction</string>
+    <string name="percent">%1$d%%</string>
+    <string name="overpaid">Overpaid</string>
+    <string name="type">Type</string>
+    <string name="select_wallet">Select Wallet</string>
+    <string name="sun" translatable="false">Sun</string>
+    <string name="mon" translatable="false">Mon</string>
+    <string name="tue" translatable="false">Tue</string>
+    <string name="wed" translatable="false">Wed</string>
+    <string name="thu" translatable="false">Thu</string>
+    <string name="fri" translatable="false">Fri</string>
+    <string name="sat" translatable="false">Sat</string>
+    <string name="date_format" translatable="false">%1$d/%2$d</string>
+
+
+
+    <string-array name="wallet_options">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Bank Account</item>
+        <item>Mobile Wallet</item>
+    </string-array>
+
+    <string-array name="debt_type_options">
+        <item>Payable</item>
+        <item>Receivable</item>
+    </string-array>
+
+    <string-array name="category_options">
+        <item>Groceries</item>
+        <item>Rent</item>
+        <item>Utilities</item>
+        <item>Entertainment</item>
+        <item>Miscellaneous</item>
+    </string-array>
+    <string name="india_language_code" translatable="false">hi</string>
+    <string name="english_language_code" translatable="false">en</string>
+    <string name="china_language_code" translatable="false">zh</string>
+    <string name="select_account">Select account</string>
+    <string name="hinted_passcode" translatable="false">-</string>
+    <string name="confirm_your_pass_code">Confirm your pass code</string>
+
+    <string-array name="select_camera_and_gallery">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+    <string-array name="color_options">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Purple</item>
+    </string-array>
+    <string name="please_reenter">Please re-enter</string>
+    <string name="add_fab" translatable="false">Add FAB</string>
+    <string name="manager">Manager (%1$d)</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="goal">Goal</string>
+    <string name="debt">Debt</string>
+    <string name="add_debt">Add Debt</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="formatted_double_percentage" translatable="false">%1$.2f%%</string>
+    <string name="add_budget">Add Budget</string>
+    <string name="budget">Budget</string>
+    <string name="who_do_you_lend_from">Who do you lend from?</string>
+    <string name="who_do_you_borrow_to">Who do you borrow to?</string>
+    <string name="what_was_it_for">What was it for?</string>
+    <string name="i_owe_s">I owe %1$s</string>
+    <string name="i_lend_s">I lend %1$s</string>
+    <string name="debt_transaction_name" translatable="false">%1$s: %2$s</string>
+    <string name="subtract">-</string>
+    <string name="paid">Paid</string>
+    <string name="saved">Saved</string>
+    <string name="left_days">Left days</string>
+    <string name="remain">Remain</string>
+    <string name="goal_date">Goal date</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="spent">Spent</string>
+    <string name="day_of_week">Day of Week</string>
+    <string name="period">Period</string>
+    <string name="day_of_month">Day of month</string>
+    <string name="week_of_month">Week of month</string>
+    <string name="back">Back</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="text_delete">Do you really want to delete this transaction?</string>
+    <string name="color">Color</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="all">All</string>
+    <string name="custom">Custom</string>
+    <string name="goal_s_name">Goal\'s name</string>
+    <string name="target_date">Target Date</string>
+    <string name="edit_goal">Edit Goal</string>
+    <string name="action_type">Action Type</string>
+    <string name="month_of_year">Month of Year</string>
+    <string name="time">Time</string>
+    <string name="select_time">Select time</string>
+    <string name="select_time_range">Select time range</string>
+    <string name="goal_transaction">Goal Transaction</string>
+    <string name="budget_s_name">Budget\'s name</string>
+    <string name="add_category">Add Category</string>
+    <string name="balance_visibility_toggle">Balance Visibility Toggle</string>
+    <string name="record">Record</string>
+    <string name="Memo" translatable="false">Memo</string>
+    <string name="icon">Icon</string>
+    <string name="exclude">Exclude</string>
+    <string name="ignore_the_balance_of_this_wallet_on_the_total_balance">Ignore the balance of this wallet on the total balance</string>
+    <string name="wallet_type">Wallet Type</string>
+    <string name="statement_date">Statement Date</string>
+    <string name="due_date">Due date</string>
+    <string name="available_credit">Available credit</string>
+    <string name="credit_limit">Credit limit</string>
+    <string name="expense">Expense</string>
+    <string name="received">Received</string>
+    <string name="blank_input">Some fields are invalid, please input valid value before saving</string>
+    <string name="input_count">You have %1$d chances before the app got dissed xD! </string>
+    <string name="debt_type_instruction">Swipe left or right to change debt type.</string>
+    <string name="add_debt_transaction">Add Debt Transaction</string>
+    <string name="hi">Hi</string>
+
+    <string-array name="spinner_color">
+        <item>#34BFFF</item>
+        <item>#0097E6</item>
+        <item>#0077C5</item>
+        <item>#055393</item>
+        <item>#008481</item>
+        <item>#00A6A4</item>
+        <item>#00C1BF</item>
+        <item>#29B473</item>
+        <item>#7FD000</item>
+        <item>#FFCA00</item>
+        <item>#FFBB00</item>
+        <item>#FFAD00</item>
+        <item>#FF8000</item>
+        <item>#F95700</item>
+        <item>#EE4036</item>
+        <item>#D52B1E</item>
+        <item>#B80000</item>
+        <item>#9C005E</item>
+        <item>#90278E</item>
+        <item>#652D90</item>
+        <item>#4E2B8F</item>
+        <item>#6436AF</item>
+        <item>#7A3DD8</item>
+        <item>#9457FA</item>
+        <item>#FF59CC</item>
+        <item>#E31C9E</item>
+        <item>#C9007A</item>
+        <item>#810035</item>
+        <item>#A52A2A</item>
+        <item>#8B4513</item>
+        <item>#7A5649</item>
+        <item>#5E4138</item>
+        <item>#424243</item>
+        <item>#455A64</item>
+        <item>#66757F</item>
+    </string-array>
+    <string-array name="category_expense">
+        <item>Bill</item>
+        <item>Clothing</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Fitness</item>
+        <item>Food</item>
+        <item>Furniture</item>
+        <item>Gift</item>
+        <item>Health</item>
+        <item>Pet</item>
+        <item>Shopping</item>
+        <item>Transportation</item>
+        <item>Travel</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="category_income">
+        <item>Award</item>
+        <item>Allowance</item>
+        <item>Dividend</item>
+        <item>Bonus</item>
+        <item>Investment</item>
+        <item>Lottery</item>
+        <item>Salary</item>
+        <item>Tips</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="budget_period">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="budget_day">
+        <item>1th</item>
+        <item>2th</item>
+        <item>3th</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21th</item>
+        <item>22th</item>
+        <item>23th</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+    </string-array>
+    <string-array name="budget_month_of_year">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="budget_day_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+</resources>

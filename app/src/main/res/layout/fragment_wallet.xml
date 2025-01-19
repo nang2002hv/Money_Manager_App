@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/walletSection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/wallet_list_bg"
+                android:layout_margin="8dp">
+
+                <!-- Wallet TextView (left-aligned) -->
+                <TextView
+                    android:id="@+id/walletSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/walletManagerTextView"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+                <!-- Manager TextView (right-aligned) -->
+                <TextView
+                    android:id="@+id/walletManagerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manager"
+                    android:textColor="@color/cyan"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/walletSpinner" />
+
+                <!-- RecyclerView below both TextViews -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/walletRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintTop_toBottomOf="@id/walletSpinner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_8dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/budgetSection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:background="@drawable/wallet_list_bg"
+                app:layout_constraintTop_toBottomOf="@id/walletSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/budgetTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/budget"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/budgetManagerTextView"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+                <!-- Manager TextView (right-aligned) -->
+                <TextView
+                    android:id="@+id/budgetManagerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manager"
+                    android:textColor="@color/cyan"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/budgetTextView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/budgetRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintTop_toBottomOf="@id/budgetTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/goalSection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/wallet_list_bg"
+                app:layout_constraintTop_toBottomOf="@id/budgetSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Goal TextView (left-aligned) -->
+                <TextView
+                    android:id="@+id/goalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/goalManagerTextView"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+                <!-- Manager TextView (right-aligned) -->
+                <TextView
+                    android:id="@+id/goalManagerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manager"
+                    android:textColor="@color/cyan"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/goalTextView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/goalRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintTop_toBottomOf="@id/goalTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/debtSection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:background="@drawable/wallet_list_bg"
+                app:layout_constraintTop_toBottomOf="@id/goalSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Goal TextView (left-aligned) -->
+                <TextView
+                    android:id="@+id/debtTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/debtManagerTextView"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+                <!-- Manager TextView (right-aligned) -->
+                <TextView
+                    android:id="@+id/debtManagerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manager"
+                    android:textColor="@color/cyan"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/debtTextView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/debtRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintTop_toBottomOf="@id/debtTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

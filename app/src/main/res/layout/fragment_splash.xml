@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ivSplash"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="money.json"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_127dp"/>
+
+        <TextView
+            android:id="@+id/tvVoiceChanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/money_manager"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_32sp"
+            android:fontFamily="@font/sfprodisplay_bold"
+            app:layout_constraintTop_toBottomOf="@id/ivSplash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_30dp"/>
+
+        <TextView
+            android:id="@+id/tvChangeYourVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/simplify_your_finances"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvVoiceChanger"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ivLoading"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="loading.json"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvChangeYourVoice"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

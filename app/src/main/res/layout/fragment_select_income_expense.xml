@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        tools:context=".ui.select_category.SelectIncomeExpenseFragment">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:src="@drawable/arrow_left"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="@string/select_category"
+                android:textSize="@dimen/_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llIncomeExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@drawable/customer_select_category"
+            android:layout_below="@+id/rlHeader">
+            <TextView
+                android:id="@+id/tvIncome"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/income"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:padding="@dimen/_4dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvExpense"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/add_expense"
+                android:textColor="@color/white"
+                android:background="@drawable/customer_select_category_expense"
+                android:textSize="12dp"
+                android:padding="@dimen/_4dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vpCategory"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_below="@+id/llIncomeExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+</layout>

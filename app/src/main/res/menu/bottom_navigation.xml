@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home_selector"
+        android:id="@+id/action_home"
+        android:title="@string/home"/>
+    <item
+        android:icon="@drawable/ic_calendar_selector"
+        android:id="@+id/action_calendar"
+        android:title="@string/calendar"/>
+    <item
+        android:icon="@drawable/ic_statistic_selector"
+        android:id="@+id/action_statistic"
+        android:title="@string/statistic"/>
+    <item
+        android:icon="@drawable/ic_wallet_selector"
+        android:id="@+id/action_wallet"
+        android:title="@string/wallet"/>
+    <item
+        android:id="@+id/more_selector"
+        android:title=""/>
+</menu>

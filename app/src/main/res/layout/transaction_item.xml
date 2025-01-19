@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/transactionTypeImageView"
+            android:layout_width="@dimen/_36dp"
+            android:layout_height="@dimen/_36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/expense_1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transactionTypeTextView"
+            app:layout_constraintStart_toEndOf="@id/transactionTypeImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Repayment"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/walletName"
+            app:layout_constraintStart_toEndOf="@id/transactionTypeImageView"
+            app:layout_constraintTop_toBottomOf="@id/transactionTypeTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:text="cash"
+           />
+
+        <TextView
+            android:id="@+id/transactionAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:layout_marginEnd="16dp"
+            android:text="₦ 1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/transactionTypeTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/transactionTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="9:58"
+            android:textAlignment="viewEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/transactionTypeTextView"
+            app:layout_constraintTop_toBottomOf="@id/transactionAmount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

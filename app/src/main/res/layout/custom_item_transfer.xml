@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_12dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="@dimen/_36dp"
+            android:layout_height="@dimen/_36dp"
+            android:src="@drawable/ic_back"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/iv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_day_of_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viettin Bank"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/tv_month_year"
+                android:text="Credit card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="-đ 2.000.000"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="22:58"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

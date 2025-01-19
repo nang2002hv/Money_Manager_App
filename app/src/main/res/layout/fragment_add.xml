@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_16dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_48dp"
+                android:layout_height="@dimen/_32dp"
+                android:src="@drawable/arrow_left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_expense"/>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12dp"
+                android:text="@string/save"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:paddingLeft="@dimen/_16dp"
+                android:paddingRight="@dimen/_16dp"
+                android:background="@drawable/background_save"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_below="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_4dp"
+            android:background="@drawable/customer_select_category"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:text="@string/income"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_add_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:text="@string/add_expense"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_transfer"
+                android:padding="@dimen/_2dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer"/>
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpAdd"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tableLayout"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</layout>

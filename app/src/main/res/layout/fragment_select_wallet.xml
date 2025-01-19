@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/_8dp"/>
+            <TextView
+                android:textSize="@dimen/_20sp"
+                android:text="Select wallet"
+                android:textStyle="bold"
+                android:fontFamily="@font/sfprodisplay_medium"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/sfprodisplay_medium"
+            android:layout_margin="@dimen/_16dp"
+            android:text="@string/included_in_total"
+            android:textSize="@dimen/_12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvIncludeInToal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/custome_icon_wallet" />
+
+        <TextView
+            android:fontFamily="@font/sfprodisplay_medium"
+            android:layout_margin="@dimen/_16dp"
+            android:text="@string/excluded_from_total"
+            android:textSize="@dimen/_12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvExcludedfromtotal"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/custome_icon_wallet"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

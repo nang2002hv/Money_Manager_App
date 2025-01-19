@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Eye shape -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,4C7.03,4 3,7.74 3,12C3,14.74 6.01,17.58 10.27,19.17L12,22L13.73,19.17C17.99,17.58 21,14.74 21,12C21,7.74 16.97,4 12,4ZM12,16C10.07,16 8.28,15.32 7.09,14.09C7.56,13.17 8.72,12.53 10.07,12.26L12,10.88L13.93,12.26C15.28,12.53 16.44,13.17 16.91,14.09C15.72,15.32 13.93,16 12,16Z" />
+
+    <!-- Eye-lid closure (represented by a line) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M3,12L21,12" />
+</vector>

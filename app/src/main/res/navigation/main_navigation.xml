@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.money_manager_app.fragment.SplashFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_languageFragment"
+            app:destination="@id/languageFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.money_manager_app.fragment.language.view.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" >
+        <action
+            android:id="@+id/action_languageFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.money_manager_app.fragment.password.view.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_passwordFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.money_manager_app.fragment.create_account.view.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.money_manager_app.fragment.main.MainScreenFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_debtDetailFragment"
+            app:destination="@id/debtDetailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addDebtFragment"
+            app:destination="@id/addDebtFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_goalDetailFragment"
+            app:destination="@id/goalDetailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addGoalFragment"
+            app:destination="@id/addGoalFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addWalletFragment"
+            app:destination="@id/addWalletFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_walletDetailFragment"
+            app:destination="@id/walletDetailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailBudgetFragment"
+            app:destination="@id/detailBudgetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/debtDetailFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.debt_detail.DebtDetailFragment"
+        android:label="DebtDetailFragment" >
+        <action
+            android:id="@+id/action_debtDetailFragment_to_addDebtTransactionFragment"
+            app:destination="@id/addDebtTransactionFragment" />
+        <action
+            android:id="@+id/action_debtDetailFragment_to_addDebtFragment"
+            app:destination="@id/addDebtFragment" />
+        <action
+            android:id="@+id/action_debtDetailFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDebtTransactionFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_debt_transaction.AddDebtTransactionFragment"
+        android:label="AddDebtTransactionFragment" />
+    <fragment
+        android:id="@+id/addDebtFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_debt.AddDebtFragment"
+        android:label="AddDebtFragment" />
+    <fragment
+        android:id="@+id/goalDetailFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.goal_detail.GoalDetailFragment"
+        android:label="GoalDetailFragment" >
+        <action
+            android:id="@+id/action_goalDetailFragment_to_addGoalTransactionFragment"
+            app:destination="@id/addGoalTransactionFragment" />
+        <action
+            android:id="@+id/action_goalDetailFragment_to_addGoalFragment"
+            app:destination="@id/addGoalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGoalFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_goal.AddGoalFragment"
+        android:label="AddGoalFragment" />
+    <fragment
+        android:id="@+id/addGoalTransactionFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_goal_transaction.AddGoalTransactionFragment"
+        android:label="AddGoalTransactionFragment" />
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.money_manager_app.fragment.add.view.AddFragment"
+        android:label="AddFragment"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectIncomeExpenseFragment"
+        android:name="com.example.money_manager_app.selecticon.SelectIncomeExpenseFragment"
+        android:label="SelectCategoryFragment"
+        tools:layout="@layout/fragment_select_income_expense" />
+
+    <fragment
+        android:id="@+id/selectWalletFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.SelectWalletFragment"
+        android:label="SelectWalletFragment"
+        tools:layout="@layout/fragment_select_wallet" />
+
+    <fragment
+        android:id="@+id/detailDayFragment"
+        android:name="com.example.money_manager_app.fragment.detail.view.DetailDayFragment"
+        android:label="DetailDayFragment"
+        tools:layout="@layout/fragment_detail_day" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.money_manager_app.fragment.search.view.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.money_manager_app.fragment.record.view.RecordFragment"
+        android:label="RecordFragment"
+        tools:layout="@layout/fragment_record"/>
+    <fragment
+        android:id="@+id/addWalletFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_wallet.AddWalletFragment"
+        android:label="AddWalletFragment" />
+    <fragment
+        android:id="@+id/walletDetailFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.wallet_detail.WalletDetailFragment"
+        android:label="WalletDetailFragment" >
+        <action
+            android:id="@+id/action_walletDetailFragment_to_addWalletFragment"
+            app:destination="@id/addWalletFragment" />
+        <action
+            android:id="@+id/action_walletDetailFragment_to_statisticFragment"
+            app:destination="@id/statisticFragment" />
+        <action
+            android:id="@+id/action_walletDetailFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBudgetFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.add_budget.AddBudgetFragment"
+        android:label="AddBudgetFragment"
+        tools:layout="@layout/fragment_add_budget" >
+        <action
+            android:id="@+id/action_addBudgetFragment_to_MultipleSelectionCatrgoryFragment"
+            app:destination="@id/MultipleSelectionCatrgoryFragment" />
+        <action
+            android:id="@+id/action_addBudgetFragment_to_walletFragment"
+            app:destination="@id/walletFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MultipleSelectionCatrgoryFragment"
+        android:name="com.example.money_manager_app.selecticon.MultipleSelectioncategoryFragment"
+        android:label="AddBudgetTransactionFragment"
+        tools:layout="@layout/fragment_category" />
+
+
+    <fragment
+        android:id="@+id/detailBudgetFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.budget_detail.BudgetDetailFragment"
+        android:label="AddBudgetTransactionFragment"
+        tools:layout="@layout/fragment_budget_detail" >
+        <action
+            android:id="@+id/action_detailBudgetFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+        <action
+            android:id="@+id/action_detailBudgetFragment_to_entertainmentFragment"
+            app:destination="@id/entertainmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="com.example.money_manager_app.fragment.entertainment.view.EntertainmentFragment"
+        android:label="EntertainmentFragment"
+        tools:layout="@layout/fragment_entertainment">
+        <action
+            android:id="@+id/action_entertainmentFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.example.money_manager_app.fragment.statistic.view.StatisticFragment"
+        tools:layout="@layout/fragment_statistic"
+        android:label="StatisticFragment" >
+        <action
+            android:id="@+id/action_statisticFragment_to_structureFragment"
+            app:destination="@id/structureFragment" />
+        <action
+            android:id="@+id/action_statisticFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_statisticFragment_to_createAccountFragment"
+            app:destination="@+id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.example.money_manager_app.fragment.wallet.WalletFragment"
+        tools:layout="@layout/fragment_wallet"
+        android:label="WalletFragment" />
+    <fragment
+        android:id="@+id/structureFragment"
+        android:name="com.example.money_manager_app.fragment.structure.view.StructureFragment"
+        tools:layout="@layout/fragment_structure"
+        android:label="StructureFragment" />
+    <fragment
+        android:id="@+id/transactionFragment"
+        tools:layout="@layout/fragment_transaction"
+        android:name="com.example.money_manager_app.fragment.transaction.view.TransactionFragment"
+        android:label="TransactionFragment" />
+    <fragment
+        android:id="@+id/framgmentCaculator"
+        android:name="com.example.money_manager_app.fragment.caculator.FramgmentCaculator"
+        android:label="FramgmentCaculator"
+        tools:layout="@layout/fragment_caculator"
+        />
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="com.example.money_manager_app.fragment.add.view.expense.AddExpenseFragment"
+        android:label="AddExpenseFragment" >
+        <action
+            android:id="@+id/action_addExpenseFragment_to_framgmentCaculator"
+            app:destination="@id/framgmentCaculator" />
+        <action
+            android:id="@+id/action_addExpenseFragment_to_selectIncomeExpenseFragment"
+            app:destination="@id/selectIncomeExpenseFragment" />
+        <action
+            android:id="@+id/action_addExpenseFragment_to_selectWalletFragment"
+            app:destination="@id/selectWalletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addIncomeFragment"
+        android:name="com.example.money_manager_app.fragment.add.view.income.AddIncomeFragment"
+        android:label="AddIncomeFragment" >
+        <action
+            android:id="@+id/action_addIncomeFragment_to_framgmentCaculator"
+            app:destination="@id/framgmentCaculator" />
+        <action
+            android:id="@+id/action_addIncomeFragment_to_selectIncomeExpenseFragment"
+            app:destination="@id/selectIncomeExpenseFragment" />
+        <action
+            android:id="@+id/action_addIncomeFragment_to_selectWalletFragment"
+            app:destination="@id/selectWalletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTranferFragment"
+        android:name="com.example.money_manager_app.fragment.add.view.transfer.AddTranferFragment"
+        android:label="AddTranferFragment" >
+        <action
+            android:id="@+id/action_addTranferFragment_to_framgmentCaculator"
+            app:destination="@id/framgmentCaculator" />
+        <action
+            android:id="@+id/action_addTranferFragment_to_selectIncomeExpenseFragment"
+            app:destination="@id/selectIncomeExpenseFragment" />
+        <action
+            android:id="@+id/action_addTranferFragment_to_selectWalletFragment"
+            app:destination="@id/selectWalletFragment" />
+    </fragment>
+
+
+</navigation>

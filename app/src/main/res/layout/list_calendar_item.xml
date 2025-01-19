@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_4dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dayLabel"
+                android:padding="4dp"
+                android:text="12"
+                android:textSize="@dimen/_10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#ff3f96e2"
+                android:layout_marginTop="@dimen/_8dp"
+                android:id="@+id/incomeLabel"
+                android:textSize="@dimen/_7sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+            <TextView
+                android:textColor="#fff73242"
+                android:id="@+id/expenseLabel"
+                android:textSize="@dimen/_7sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+            <TextView
+                android:id="@+id/totalLabel"
+                android:textSize="@dimen/_7sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+            <View
+                android:id="@+id/startSeparatorView"
+                android:layout_width="0.25dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <View
+                android:id="@+id/endSeparatorView"
+                android:layout_width="0.25dp"
+                android:layout_height="0dp" />
+            <View
+                android:id="@+id/topSeparatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="0.25dp" />
+            <View
+                android:id="@+id/bottomSeparatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="0.25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
